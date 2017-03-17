@@ -27,7 +27,7 @@ em { font-style: italic; }
 
 section { padding: 80px 0 40px 0; }
 
-.box { padding: 2%; }
+.box { padding: 3%; }
 
 /* ------------------ Headings ------------------ */
 
@@ -101,7 +101,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    box-shadow: 0px 4px 15px #CCCCCC;
+    box-shadow: 0px 4px 15px #D3D3D3;
 
 }
 
@@ -154,6 +154,15 @@ nav li a:active {
 .section-about {
     width: 75%;
     margin-left: 12.5%;
+}
+
+.section-about img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 30px auto 50px auto;
+    border-radius: 50%;
+    box-shadow: 2px 4px 15px #D3D3D3;
 }
 
 /* -------------------------------------------------------------------------- */
