@@ -2,20 +2,19 @@
 /* Basic setup */
 /* -------------------------------------------------------------------------- */
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
+
 html {
     color: #212121;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 20px;
+    overflow-x: hidden;
 }
 
-h1 {
-    font-family: 'Fjalla One', sans-serif;
-    margin-top: 40px;
-}
+h1, h2 { font-family: 'Fjalla One', sans-serif; }
+
+em { font-style: italic; }
 
 /* -------------------------------------------------------------------------- */
 /* Reusable Components */
@@ -26,16 +25,18 @@ h1 {
     margin: 0 auto;
 }
 
+section { padding: 80px 0 40px 0; }
+
+.box { padding: 2%; }
+
 /* ------------------ Headings ------------------ */
 
-h1, h2 {
-    letter-spacing: 1px;
-    color: #fff;
-    line-height: 145%;
-}
+h1, h2 { letter-spacing: 2px; }
 
 h1 {
     font-size: 300%;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
 h1 span {
@@ -44,10 +45,36 @@ h1 span {
 }
 
 h2 {
-    font-size: 180%;
+    font-size: 240%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #FF9800;
+    content: " ";
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 /* ------------------ Paragraphs ------------------ */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.box p {
+    letter-spacing: 1px;
+    line-height: 145%;
+}
 
 /* ------------------ Links ------------------ */
 
@@ -74,23 +101,38 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    box-shadow: 0px 4px 15px #CCCCCC;
+
+}
+
+header h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-align: left;
+    font-size: 180%;
+}
+
+header h2:after {
+    display: none;
 }
 
 .header-text-box {
-    width: 750px;
-    margin: 140px auto;
+    width: 800px;
+    margin: 220px auto;
+    vertical-align: middle;
 }
 
 /* ------------------ nav ------------------ */
 
 nav {
+    font-weight: 400;
     text-align: center;
 }
 
 nav li {
     display: inline-block;
-    margin: 0 40px;
-    padding: 10px;
+    margin: 0 50px;
+    padding-top: 20px;
 }
 
 nav li a:link,
@@ -103,4 +145,21 @@ nav li a:visited {
 nav li a:hover,
 nav li a:active {
     border-bottom: 2px solid #FF9800;
+}
+
+/* -------------------------------------------------------------------------- */
+/* About Section */
+/* -------------------------------------------------------------------------- */
+
+.section-about {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Projects Section */
+/* -------------------------------------------------------------------------- */
+
+.section-projects {
+    background-color: #F5F5F5;
 }
