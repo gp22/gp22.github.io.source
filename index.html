@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,300i,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,300i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="vendors/css/reset.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
@@ -11,35 +11,35 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="nav-li"><a class="nav-li-a" href="#">About</a></li>
+                <li class="nav-li"><a class="nav-li-a" href="#">Projects</a></li>
+                <li class="nav-li"><a class="nav-li-a" href="#">Contact</a></li>
             </ul>
         </nav>
         <div class="header-text-box">
             <h1>
-                My name is <span>Paul Garcia</span>.
+                My name is <span class="hero-text">Paul Garcia</span>.
             </h1>
-            <h2>
+            <h2 class="subhead">
                 I help companies develop web applications.
             </h2>
         </div>
     </header>
 
-    <section class="section-about">
+    <section>
         <div class="row">
             <h2>About</h2>
-            <img src="resources/img/portrait.jpg">
-            <p class="long-copy">
+            <img class="hero-img" src="resources/img/portrait.jpg">
+            <p class="copy long-copy">
                 I'm a full-stack web developer &mdash; Currently focused on projects using Javascript and the MEAN stack <em>(MongoDB, Express.js, Angular.js, Node.js)</em>.
             </p>
         </div>
         <div class="row">
-            <div class="col span-1-of-2 box">
+            <div class="col span-1-of-2 copy box">
                 <p>
-                    I'm passionate about science, technology, and their implications on society.
+                    I'm passionate about technology and it's impact on society.
                 </p>
                 <br>
                 <p>
@@ -54,13 +54,13 @@
                     I love learning new frameworks and software development techniques.
                 </p>
             </div>
-            <div class="col span-1-of-2 box">
+            <div class="col span-1-of-2 copy box">
                 <p>
                     I also dig Linux, BSD, Internet protocols <em>(TCP/IP, HTTP, etc.)</em> and server and network administration.
                 </p>
                 <br>
                 <p>
-                    I spend my free time improving my coding skills by working on API and RESTful web application projects.
+                    I spend my free time working on API and RESTful web application projects.
                 </p>
                 <br>
                 <p>

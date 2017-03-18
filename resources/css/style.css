@@ -7,12 +7,14 @@
 html {
     color: #212121;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
     font-size: 22px;
     overflow-x: hidden;
 }
 
-h1, h2 { font-family: 'Fjalla One', sans-serif; }
+h1, h2 {
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+}
 
 em { font-style: italic; }
 
@@ -22,7 +24,7 @@ em { font-style: italic; }
 
 .row {
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 0 10%;
 }
 
 section { padding: 80px 0; }
@@ -31,17 +33,10 @@ section { padding: 80px 0; }
 
 /* ------------------ Headings ------------------ */
 
-h1, h2 { letter-spacing: 2px; }
-
 h1 {
     font-size: 300%;
     margin-bottom: 20px;
     color: #fff;
-}
-
-h1 span {
-    font-size: 150%;
-    color: #FF9800;
 }
 
 h2 {
@@ -62,19 +57,17 @@ h2:after {
 
 /* ------------------ Paragraphs ------------------ */
 
+.copy {
+    letter-spacing: 1px;
+    line-height: 145%;
+}
+
 .long-copy {
     font-size: 140%;
-    line-height: 145%;
     width: 80%;
     margin-left: 10%;
     margin-bottom: 50px;
     text-align: center;
-    letter-spacing: 1px;
-}
-
-.box p {
-    letter-spacing: 1px;
-    line-height: 145%;
 }
 
 /* ------------------ Links ------------------ */
@@ -98,22 +91,11 @@ a:active {
 /* -------------------------------------------------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/background.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     box-shadow: 0px 4px 15px #D3D3D3;
-}
-
-header h2 {
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-    text-align: left;
-    font-size: 180%;
-}
-
-header h2:after {
-    display: none;
 }
 
 .header-text-box {
@@ -122,28 +104,43 @@ header h2:after {
     vertical-align: middle;
 }
 
+.subhead {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-align: left;
+    font-size: 180%;
+}
+
+.subhead:after {
+    display: none;
+}
+
+.hero-text {
+    font-size: 150%;
+    color: #FF9800;
+}
+
 /* ------------------ nav ------------------ */
 
-nav {
-    /*font-weight: 400;*/
+.nav {
     text-align: center;
 }
 
-nav li {
+.nav-li {
     display: inline-block;
     margin: 0 50px;
     padding-top: 20px;
 }
 
-nav li a:link,
-nav li a:visited {
+.nav-li-a:link,
+.nav-li-a:visited {
     color: #fff;
     text-transform: uppercase;
     transition: border-bottom 0.2s;
 }
 
-nav li a:hover,
-nav li a:active {
+.nav-li-a:hover,
+.nav-li-a:active {
     border-bottom: 2px solid #FF9800;
 }
 
@@ -151,11 +148,7 @@ nav li a:active {
 /* About Section */
 /* -------------------------------------------------------------------------- */
 
-.section-about {
-    margin: 0 10%;
-}
-
-.section-about img {
+.hero-img {
     display: block;
     width: 150px;
     height: 150px;
@@ -179,12 +172,10 @@ nav li a:active {
 /* -------------------------------------------------------------------------- */
 
 footer {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(img/background-footer.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(img/background-footer.jpg);
     background-size: cover;
     background-position: center;
     height: 70vh;
-    /*box-shadow: 0px 4px 15px #D3D3D3;*/
-    /*box-shadow: 0px 10px 24px #DEDEDE;*/
     box-shadow: 0px 10px 24px #323232;
 
 }
