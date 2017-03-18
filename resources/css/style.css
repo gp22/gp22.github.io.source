@@ -11,7 +11,7 @@ html {
     overflow-x: hidden;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Fjalla One', sans-serif;
     letter-spacing: 2px;
 }
@@ -53,6 +53,11 @@ h2:after {
     width: 120px;
     margin: 0 auto;
     margin-top: 30px;
+}
+
+h3 {
+    font-size: 200%;
+    margin-bottom: 30px;
 }
 
 /* ------------------ Paragraphs ------------------ */
@@ -164,7 +169,22 @@ header {
 .section-projects {
     background-color: #F5F5F5;
     box-shadow: 0px 10px 24px #DEDEDE;
+}
 
+.voting-app-img {
+    width: 250px;
+}
+
+.app-box-left {
+    text-align: right;
+    margin-top: 50px;
+    padding-right: 5%;
+}
+
+.app-box-right {
+    text-align: left;
+    margin-top: 100px;
+    padding-left: 5%;
 }
 
 /* -------------------------------------------------------------------------- */
