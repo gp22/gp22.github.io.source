@@ -1,0 +1,16 @@
+{
+  "name": "gp22.github.io",
+  "version": "1.0.0",
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.3.0",
+    "gulp-watch": "^4.3.11",
+    "postcss-import": "^9.1.0",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^3.0.0"
+  }
+}
