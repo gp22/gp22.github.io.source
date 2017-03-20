@@ -1,5 +1,7 @@
 * { box-sizing: border-box; }
 
+/* ------------------ Text ------------------ */
+
 body {
     color: $textDefault;
     font-family: 'Open Sans', sans-serif;
@@ -10,8 +12,23 @@ body {
 
 em { font-style: italic; }
 
-/*section { padding: 80px 0; }*/
+/* ------------------ Headings ------------------ */
 
 h1, h2 {
     letter-spacing: 2px;
+    font-weight: normal;
+}
+
+/* ------------------ Links ------------------ */
+
+a:link,
+a:visited {
+    /*color: $defaultOrange;*/
+    text-decoration: none;
+    /*padding-bottom:*/
+}
+
+a:hover,
+a:active {
+
 }
