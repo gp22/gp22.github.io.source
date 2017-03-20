@@ -469,8 +469,6 @@ template {
 body {
     color: #212121;
     font-family: 'Open Sans', sans-serif;
-    /*font-size: 22px;*/
-    /*overflow-x: hidden;*/
     letter-spacing: 1px;
 }
 
@@ -509,14 +507,13 @@ a:active {
 
 .large-hero__text-content {
   display: block;
-  max-width: 340px;
-  margin: 10em auto 0 auto;
+  max-width: 280px;
+  margin: 8em auto 0 auto;
 }
 
 @media (min-width: 530px) {
 
   .large-hero__text-content {
-    margin-top: 9em;
     max-width: 500px;
   }
 }
@@ -524,7 +521,6 @@ a:active {
 @media (min-width: 800px) {
 
   .large-hero__text-content {
-    margin-top: 8em;
     max-width: 550px;
   }
 }
@@ -540,7 +536,6 @@ a:active {
 .large-hero__title {
   font-size: 3rem;
   font-family: 'Fjalla One', sans-serif;
-  line-height: 145%;
 }
 
 @media (min-width: 530px) {
@@ -565,8 +560,8 @@ a:active {
 }
 
 .large-hero__name {
-  font-size: 4.0rem;
-  color: #FF9800;/*margin-bottom: 4em;*/
+  font-size: 5.4rem;
+  color: #FF9800;
   line-height: 120%;
 }
 

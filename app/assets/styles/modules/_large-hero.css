@@ -8,16 +8,14 @@
 
     &__text-content {
         display: block;
-        max-width: 340px;
-        margin: 10em auto 0 auto;
+        max-width: 280px;
+        margin: 8em auto 0 auto;
 
         @mixin small {
-            margin-top: 9em;
             max-width: 500px;
         }
 
         @mixin medium {
-            margin-top: 8em;
             max-width: 550px;
         }
 
@@ -30,7 +28,6 @@
     &__title {
         font-size: 3rem;
         font-family: 'Fjalla One', sans-serif;
-        line-height: 145%;
 
         @mixin small {
             font-size: 3.4rem;
@@ -46,9 +43,8 @@
     }
 
     &__name {
-        font-size: 4.0rem;
+        font-size: 5.4rem;
         color: $defaultOrange;
-        /*margin-bottom: 4em;*/
         line-height: 120%;
 
         @mixin small {
