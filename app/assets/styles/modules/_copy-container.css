@@ -1,0 +1,19 @@
+.copy-container {
+    letter-spacing: 1px;
+    line-height: 1.65;
+    margin: 3rem 0;
+
+    &--long {
+
+    }
+
+    &--large {
+        font-size: 1.2rem;
+    }
+
+    &--centered {
+        @mixin medium {
+            text-align: center;
+        }
+    }
+}

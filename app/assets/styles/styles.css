@@ -6,5 +6,7 @@
 @import 'modules/_large-hero__nav';
 @import 'modules/_wrapper';
 @import 'modules/_page-section';
-@import 'modules/_headline';
+@import 'modules/_section-title';
 @import 'modules/_shadow';
+@import 'modules/_copy-container';
+@import 'modules/_row';

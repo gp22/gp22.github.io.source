@@ -660,6 +660,10 @@ a:active {
     padding: 0 18px;
     max-width: 1200px;
     margin: 0 auto;
+
+/*    div {
+        margin: 0;
+    }*/
 }
 
 .page-section {
@@ -677,30 +681,27 @@ a:active {
   background-color: #F5F5F5;
 }
 
-.headline {
+.section-title {
     font-family: 'Fjalla One', sans-serif;
     font-size: 2.4rem;
+    text-align: center;
 }
 
 @media (min-width: 530px) {
 
-  .headline {
+  .section-title {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 800px) {
 
-  .headline {
+  .section-title {
     font-size: 4rem;
   }
 }
 
-.headline--centered {
-  text-align: center;
-}
-
-.headline--b-underline-orange:after {
+.section-title:after {
   display: block;
   height: 2px;
   background-color: #FF9800;
@@ -715,3 +716,30 @@ a:active {
 }
 
 /*box-shadow: 2px 4px 15px #D3D3D3;*/
+
+.copy-container {
+    letter-spacing: 1px;
+    line-height: 1.65;
+    margin: 3rem 0;
+}
+
+.copy-container--long {
+
+}
+
+.copy-container--large {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 800px) {
+
+  .copy-container--centered {
+    text-align: center;
+  }
+}
+
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+}

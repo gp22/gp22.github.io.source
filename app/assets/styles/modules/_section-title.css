@@ -1,6 +1,7 @@
-.headline {
+.section-title {
     font-family: 'Fjalla One', sans-serif;
     font-size: 2.4rem;
+    text-align: center;
 
     @mixin small {
         font-size: 3rem;
@@ -10,11 +11,7 @@
         font-size: 4rem;
     }
 
-    &--centered {
-        text-align: center;
-    }
-
-    &--b-underline-orange:after {
+    &:after {
         display: block;
         height: 2px;
         background-color: $defaultOrange;
