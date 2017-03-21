@@ -1,7 +1,19 @@
 .copy-container {
     letter-spacing: 1px;
     line-height: 1.65;
-    margin: 3rem 0;
+    /*margin: 14rem 0;*/
+
+    @mixin small {
+        font-size: 1.2rem;
+    }
+
+    @mixin medium {
+        font-size: 1.4rem;
+    }
+
+    @mixin large {
+        font-size: 1.6rem;
+    }
 
     &--long {
 
@@ -9,6 +21,18 @@
 
     &--large {
         font-size: 1.2rem;
+
+        @mixin small {
+            font-size: 1.4rem;
+        }
+
+        @mixin medium {
+            font-size: 1.6rem;
+        }
+
+        @mixin large {
+            font-size: 1.8rem;
+        }
     }
 
     &--centered {

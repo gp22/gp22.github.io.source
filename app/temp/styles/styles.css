@@ -658,12 +658,9 @@ a:active {
 
 .wrapper {
     padding: 0 18px;
-    max-width: 1200px;
+    max-width: 1236px;
     margin: 0 auto;
-
-/*    div {
-        margin: 0;
-    }*/
+    overflow: hidden;
 }
 
 .page-section {
@@ -685,6 +682,7 @@ a:active {
     font-family: 'Fjalla One', sans-serif;
     font-size: 2.4rem;
     text-align: center;
+    margin: 0;
 }
 
 @media (min-width: 530px) {
@@ -720,7 +718,29 @@ a:active {
 .copy-container {
     letter-spacing: 1px;
     line-height: 1.65;
-    margin: 3rem 0;
+}
+
+/*margin: 14rem 0;*/
+
+@media (min-width: 530px) {
+
+  .copy-container {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .copy-container {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .copy-container {
+    font-size: 1.6rem;
+  }
 }
 
 .copy-container--long {
@@ -729,6 +749,27 @@ a:active {
 
 .copy-container--large {
   font-size: 1.2rem;
+}
+
+@media (min-width: 530px) {
+
+  .copy-container--large {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .copy-container--large {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .copy-container--large {
+    font-size: 1.8rem;
+  }
 }
 
 @media (min-width: 800px) {
@@ -742,4 +783,20 @@ a:active {
   content: '';
   clear: both;
   display: table;
+}
+
+.row--gutters {
+  margin-right: -70px;
+}
+
+.row--gutters > div {
+  padding-right: 70px;
+}
+
+@media (min-width: 800px) {
+
+  .row__medium-6 {
+    float: left;
+    width: 50%;
+  }
 }
