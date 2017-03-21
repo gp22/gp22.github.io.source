@@ -1,5 +1,9 @@
 .page-section {
-    padding: 4.5rem 0;
+    padding: 2.5rem 0;
+
+    @mixin small {
+        padding: 4.5rem 0;
+    }
 
     &--gray {
         background-color: #F5F5F5;

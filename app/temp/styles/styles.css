@@ -502,7 +502,6 @@ a:active {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    box-shadow: 0px 4px 15px #D3D3D3;
 }
 
 .large-hero__text-content {
@@ -664,7 +663,14 @@ a:active {
 }
 
 .page-section {
+    padding: 2.5rem 0;
+}
+
+@media (min-width: 530px) {
+
+  .page-section {
     padding: 4.5rem 0;
+  }
 }
 
 .page-section--gray {
@@ -673,6 +679,21 @@ a:active {
 
 .headline {
     font-family: 'Fjalla One', sans-serif;
+    font-size: 2.4rem;
+}
+
+@media (min-width: 530px) {
+
+  .headline {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .headline {
+    font-size: 4rem;
+  }
 }
 
 .headline--centered {
@@ -688,3 +709,9 @@ a:active {
   margin: 0 auto;
   margin-top: 30px;
 }
+
+.shadow {
+    box-shadow: 0 10px 20px #D3D3D3;
+}
+
+/*box-shadow: 2px 4px 15px #D3D3D3;*/
