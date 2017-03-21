@@ -1,18 +1,18 @@
 .row {
     @mixin clearfix;
 
-    &--gutters {
+    /*&--gutters {
         margin-right: -70px;
-    }
-
-    &--gutters > div {
-        padding-right: 70px;
-    }
+    }*/
 
     @mixin medium {
         &__medium-6 {
             float: left;
             width: 50%;
+        }
+
+        &--gutters > div {
+            padding: 0 40px;
         }
     }
 }

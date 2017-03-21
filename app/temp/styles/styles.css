@@ -664,13 +664,20 @@ a:active {
 }
 
 .page-section {
-    padding: 2.5rem 0;
+    padding: 4.5rem 0;
 }
 
 @media (min-width: 530px) {
 
   .page-section {
-    padding: 4.5rem 0;
+    padding: 5.5rem 0;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .page-section {
+    padding: 6.5rem 0;
   }
 }
 
@@ -682,7 +689,7 @@ a:active {
     font-family: 'Fjalla One', sans-serif;
     font-size: 2.4rem;
     text-align: center;
-    margin: 0;
+    margin: 0 0 2rem 0;
 }
 
 @media (min-width: 530px) {
@@ -720,8 +727,6 @@ a:active {
     line-height: 1.65;
 }
 
-/*margin: 14rem 0;*/
-
 @media (min-width: 530px) {
 
   .copy-container {
@@ -733,6 +738,7 @@ a:active {
 
   .copy-container {
     font-size: 1.4rem;
+    text-align: justify;
   }
 }
 
@@ -761,6 +767,8 @@ a:active {
 @media (min-width: 800px) {
 
   .copy-container--large {
+    max-width: 760px;
+    margin: 0 auto;
     font-size: 1.6rem;
   }
 }
@@ -768,6 +776,7 @@ a:active {
 @media (min-width: 1200px) {
 
   .copy-container--large {
+    max-width: 900px;
     font-size: 1.8rem;
   }
 }
@@ -785,13 +794,9 @@ a:active {
   display: table;
 }
 
-.row--gutters {
-  margin-right: -70px;
-}
-
-.row--gutters > div {
-  padding-right: 70px;
-}
+/*&--gutters {
+        margin-right: -70px;
+    }*/
 
 @media (min-width: 800px) {
 
@@ -799,4 +804,16 @@ a:active {
     float: left;
     width: 50%;
   }
+
+  .row--gutters > div {
+    padding: 0 40px;
+  }
+}
+
+.hero-img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
 }

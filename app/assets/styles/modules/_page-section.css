@@ -1,11 +1,15 @@
 .page-section {
-    padding: 2.5rem 0;
+    padding: 4.5rem 0;
 
     @mixin small {
-        padding: 4.5rem 0;
+      padding: 5.5rem 0;
+    }
+
+    @mixin medium {
+      padding: 6.5rem 0;
     }
 
     &--gray {
-        background-color: #F5F5F5;
+      background-color: #F5F5F5;
     }
 }
