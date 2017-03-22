@@ -811,19 +811,19 @@ a:active {
   display: table;
 }
 
+.row--gutters {
+  margin-right: -60px;
+}
+
+.row--gutters > div {
+  padding-right: 60px;
+}
+
 @media (min-width: 800px) {
 
   .row__medium-6 {
     float: left;
     width: 50%;
-  }
-
-  .row--gutters {
-    margin-right: -60px;
-  }
-
-  .row--gutters > div {
-    padding-right: 60px;
   }
 }
 
