@@ -10,9 +10,9 @@
     font-size: 3rem;
   }
 
-  &--centered-until-large {
+  &--centered-until-medium {
     text-align: center;
-    @mixin large {
+    @mixin medium {
       text-align: left;
     }
   }

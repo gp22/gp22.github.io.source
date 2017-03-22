@@ -14,10 +14,10 @@
     margin: 0 auto;
   }
 
-  &--centered-until-large {
+  &--centered-until-medium {
     margin: 0 auto;
-    
-    @mixin large {
+
+    @mixin medium {
       margin-right: 0;
       margin-left: auto;
     }
