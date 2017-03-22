@@ -12,7 +12,7 @@ em { font-style: italic; }
 
 /* ------------------ Headings ------------------ */
 
-h1, h2 {
+h1, h2, h3 {
     letter-spacing: 2px;
     font-weight: normal;
 }

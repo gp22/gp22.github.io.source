@@ -1,46 +1,59 @@
 .copy-container {
-    letter-spacing: 1px;
-    line-height: 1.65;
+  letter-spacing: 1px;
+  line-height: 1.65;
 
-    @mixin small {
-        font-size: 1.2rem;
+  p {
+    margin-bottom: 2rem;
+  }
+
+  @mixin small {
+    font-size: 1.2rem;
+  }
+
+  @mixin medium {
+    font-size: 1.4rem;
+    text-align: justify;
+
+    p {
+      margin-bottom: 2.6rem;
     }
+  }
 
+  @mixin large {
+    font-size: 1.6rem;
+  }
+
+  &--long {
     @mixin medium {
-        font-size: 1.4rem;
-        text-align: justify;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @mixin large {
-        font-size: 1.6rem;
+      max-width: 900px;
+    }
+  }
+
+  &--large {
+    font-size: 1.2rem;
+
+    @mixin small {
+      font-size: 1.4rem;
     }
 
-    &--long {
-
+    @mixin medium {
+      font-size: 1.6rem;
     }
 
-    &--large {
-        font-size: 1.2rem;
-
-        @mixin small {
-            font-size: 1.4rem;
-        }
-
-        @mixin medium {
-            max-width: 760px;
-            margin: 0 auto;
-            font-size: 1.6rem;
-        }
-
-        @mixin large {
-            max-width: 900px;
-            font-size: 1.8rem;
-        }
+    @mixin large {
+      font-size: 1.8rem;
     }
+  }
 
-    &--centered {
-        @mixin medium {
-            text-align: center;
-        }
+  &--centered {
+    @mixin medium {
+      text-align: center;
     }
+  }
 }

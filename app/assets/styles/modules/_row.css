@@ -1,18 +1,29 @@
 .row {
-    @mixin clearfix;
+  @mixin clearfix;
 
-    /*&--gutters {
-        margin-right: -70px;
-    }*/
+  /*&--gutters {
+    margin-right: -70px;
+  }*/
 
-    @mixin medium {
-        &__medium-6 {
-            float: left;
-            width: 50%;
-        }
+  &--gutters > div {
+    padding: 0 40px;
+  }
 
-        &--gutters > div {
-            padding: 0 40px;
-        }
+  &--gutters-large > div {
+    padding: 0 60px;
+  }
+
+  @mixin medium {
+    &__medium-6 {
+      float: left;
+      width: 50%;
     }
+  }
+
+  @mixin large {
+    &__large-6 {
+      float: left;
+      width: 50%;
+    }
+  }
 }
