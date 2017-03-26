@@ -24,7 +24,11 @@
   }
 
   &--b-margin-large {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+
+    @mixin medium {
+      margin-bottom: 4rem;
+    }
   }
 
   &--iphone {

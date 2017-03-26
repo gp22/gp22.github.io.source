@@ -1,12 +1,41 @@
 .row {
   @mixin clearfix;
 
+  &--vertical-centered-div {
+    display: flex;
+    flex-direction: column;
+
+    & > div {
+      height: 80vh;
+      display: flex;
+      align-items: center;
+    }
+  }
+
   &--gutters {
     margin-right: -60px;
   }
-
   &--gutters > div {
     padding-right: 60px;
+  }
+
+
+  &--gutters-wide {
+    margin-right: -80px;
+  }
+  &--gutters-wide > div {
+    padding-right: 80px;
+  }
+
+
+  &__narrow {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @mixin small {
+      max-width: 430px;
+    }
   }
 
   @mixin medium {

@@ -1,7 +1,14 @@
 .project {
+  padding-top: 1em;
+
+  @mixin medium {
+    padding-top: 2em;
+  }
+
   &__title {
     font-family: 'Fjalla One', sans-serif;
     font-size: 2rem;
+    margin-top: 1.4em;
 
     @mixin small {
       font-size: 2.4rem;
@@ -23,16 +30,18 @@
   &__list {
     ul {
       position: relative;
-      /*padding: 0;*/
       border-left: 2px solid $defaultOrange;
       text-align: justify;
       list-style-image: url('/assets/img/icons/bullet.png');
+      padding-left: 18px;
+
+      @mixin medium {
+        padding-left: 40px;
+      }
     }
 
     ul li {
       display: inline-block;
-      /*position: absolute;*/
-      /*margin-left: 2rem;*/
       padding-bottom: 1rem;
       border-bottom: 1px solid $divider;
     }

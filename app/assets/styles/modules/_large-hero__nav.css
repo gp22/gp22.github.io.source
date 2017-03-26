@@ -1,6 +1,7 @@
 .large-hero__nav {
     text-align: center;
-
+    text-shadow: 0 0 5px #ccc;
+    
     &-ul {
         padding: 0;
         margin-top: 0;

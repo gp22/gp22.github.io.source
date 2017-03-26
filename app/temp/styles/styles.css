@@ -507,7 +507,7 @@ a:active {
 .large-hero__text-content {
   display: block;
   max-width: 280px;
-  margin: 8em auto 0 auto;
+  margin: 0 auto;
 }
 
 @media (min-width: 530px) {
@@ -524,10 +524,9 @@ a:active {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 
   .large-hero__text-content {
-    margin-top: 7em;
     max-width: 700px;
   }
 }
@@ -535,6 +534,7 @@ a:active {
 .large-hero__title {
   font-size: 3rem;
   font-family: 'Fjalla One', sans-serif;
+  text-shadow: 0 0 0.25rem #ccc;
 }
 
 @media (min-width: 530px) {
@@ -551,7 +551,7 @@ a:active {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 
   .large-hero__title {
     font-size: 4.6rem;
@@ -561,6 +561,7 @@ a:active {
 .large-hero__name {
   font-size: 5.4rem;
   color: #FF9800;
+  text-shadow: 0 0 0.25rem #F57C00;
   line-height: 120%;
 }
 
@@ -578,7 +579,7 @@ a:active {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 
   .large-hero__name {
     font-size: 9rem;
@@ -588,6 +589,7 @@ a:active {
 .large-hero__subtitle {
   margin: 0;
   font-size: 1.8rem;
+  text-shadow: 0 0 0.25rem #ccc;
 }
 
 @media (min-width: 530px) {
@@ -604,7 +606,7 @@ a:active {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 
   .large-hero__subtitle {
     font-size: 2.6rem;
@@ -613,6 +615,7 @@ a:active {
 
 .large-hero__nav {
     text-align: center;
+    text-shadow: 0 0 5px #ccc;
 
 }
 
@@ -664,20 +667,20 @@ a:active {
 }
 
 .page-section {
-    padding: 4.5rem 0;
+    padding: 3rem 0;
 }
 
 @media (min-width: 530px) {
 
   .page-section {
-    padding: 5.5rem 0;
+    padding: 4rem 0;
   }
 }
 
 @media (min-width: 800px) {
 
   .page-section {
-    padding: 6.5rem 0;
+    padding: 5rem 0;
   }
 }
 
@@ -689,7 +692,7 @@ a:active {
   font-family: 'Fjalla One', sans-serif;
   font-size: 2.4rem;
   text-align: center;
-  margin: 0 0 4rem 0;
+  margin: 0 0 3rem 0;
 }
 
 @media (min-width: 530px) {
@@ -750,10 +753,9 @@ a:active {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 
-  .copy-container {
-    font-size: 1.6rem;
+  .copy-container {/*font-size: 1.6rem;*/
   }
 }
 
@@ -766,7 +768,7 @@ a:active {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 
   .copy-container--long {
     max-width: 900px;
@@ -791,10 +793,9 @@ a:active {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 
-  .copy-container--large {
-    font-size: 1.8rem;
+  .copy-container--large {/*font-size: 1.8rem;*/
   }
 }
 
@@ -811,12 +812,53 @@ a:active {
   display: table;
 }
 
+.row--vertical-centered-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.row--vertical-centered-div > div {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .row--gutters {
   margin-right: -60px;
 }
 
 .row--gutters > div {
   padding-right: 60px;
+}
+
+.row--gutters-wide {
+  margin-right: -80px;
+}
+
+.row--gutters-wide > div {
+  padding-right: 80px;
+}
+
+.row__narrow {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 530px) {
+
+  .row__narrow {
+    max-width: 430px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -827,7 +869,7 @@ a:active {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 
   .row__large-6 {
     float: left;
@@ -865,7 +907,14 @@ a:active {
 }
 
 .img--b-margin-large {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 800px) {
+
+  .img--b-margin-large {
+    margin-bottom: 4rem;
+  }
 }
 
 .img--iphone {
@@ -909,9 +958,21 @@ a:active {
   }
 }
 
+.project {
+  padding-top: 1em;
+}
+
+@media (min-width: 800px) {
+
+  .project {
+    padding-top: 2em;
+  }
+}
+
 .project__title {
   font-family: 'Fjalla One', sans-serif;
   font-size: 2rem;
+  margin-top: 1.4em;
 }
 
 @media (min-width: 530px) {
@@ -940,14 +1001,22 @@ a:active {
 }
 
 .project__list ul {
-  position: relative;/*padding: 0;*/
+  position: relative;
   border-left: 2px solid #FF9800;
   text-align: justify;
   list-style-image: url('/assets/img/icons/bullet.png');
+  padding-left: 18px;
+}
+
+@media (min-width: 800px) {
+
+  .project__list ul {
+    padding-left: 40px;
+  }
 }
 
 .project__list ul li {
-  display: inline-block;/*position: absolute;*//*margin-left: 2rem;*/
+  display: inline-block;
   padding-bottom: 1rem;
   border-bottom: 1px solid #BDBDBD;
 }
