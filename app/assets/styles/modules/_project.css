@@ -21,13 +21,18 @@
   }
 
   &__list {
-    padding: 0;
-    border-left: 2px solid $defaultOrange;
-    text-align: justify;
+    ul {
+      position: relative;
+      /*padding: 0;*/
+      border-left: 2px solid $defaultOrange;
+      text-align: justify;
+      list-style-image: url('/assets/img/icons/bullet.png');
+    }
 
-    li {
-      list-style-type: circle;
-      margin-left: 2rem;
+    ul li {
+      display: inline-block;
+      /*position: absolute;*/
+      /*margin-left: 2rem;*/
       padding-bottom: 1rem;
       border-bottom: 1px solid $divider;
     }
