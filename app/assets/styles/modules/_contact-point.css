@@ -1,0 +1,34 @@
+.contact-point {
+  padding: 2rem 0;
+  background-color: #313131;
+
+  &__circle {
+    display: block;
+    height: 75px;
+    width: 75px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: $darkOrange;
+  }
+
+  &__icon {
+    font-size: 3rem;
+    color: #fff;
+    position: relative;
+
+    &--github {
+      top: 9px;
+      left: 17px;
+    }
+
+    &--linkedin {
+      top: 5px;
+      left: 17px;
+    }
+
+    &--email {
+      top: 6px;
+      left: 14px;
+    }
+  }
+}

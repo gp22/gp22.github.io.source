@@ -28,6 +28,14 @@
   }
 
 
+  &--gutters-narrow {
+    margin-right: -30px;
+  }
+  &--gutters-narrow > div {
+    padding-right: 30px;
+  }
+
+
   &__narrow {
     max-width: 320px;
     margin-left: auto;
@@ -35,6 +43,13 @@
 
     @mixin small {
       max-width: 430px;
+    }
+  }
+
+  @mixin small {
+    &__small-4 {
+      float: left;
+      width: 33.33%;
     }
   }
 
@@ -49,6 +64,19 @@
     &__large-6 {
       float: left;
       width: 50%;
+    }
+  }
+
+  /* Begin equal height rules */
+
+  &--equal-height-at-small {
+    @mixin small {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
     }
   }
 }

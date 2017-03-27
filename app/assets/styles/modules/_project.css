@@ -42,8 +42,9 @@
 
     ul li {
       display: inline-block;
-      padding-bottom: 1rem;
+      padding-bottom: 0.75rem;
       border-bottom: 1px solid $divider;
+      margin-bottom: 1rem;
     }
 
   }
@@ -81,7 +82,7 @@
       max-width: 230px;
 
       @mixin small {
-        max-width: 350px;
+        max-width: 320px;
       }
     }
   }

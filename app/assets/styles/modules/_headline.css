@@ -1,5 +1,6 @@
 .headline {
   font-family: 'Fjalla One', sans-serif;
+  margin: 0;
   font-size: 2rem;
 
   @mixin small {
@@ -8,6 +9,10 @@
 
   @mixin medium {
     font-size: 3rem;
+  }
+
+  &--centered {
+    text-align: center;
   }
 
   &--centered-until-medium {

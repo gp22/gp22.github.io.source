@@ -30,12 +30,4 @@
       margin-bottom: 4rem;
     }
   }
-
-  &--iphone {
-    max-width: 230px;
-
-    @mixin small {
-      max-width: 350px;
-    }
-  }
 }

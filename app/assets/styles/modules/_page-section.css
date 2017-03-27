@@ -9,7 +9,23 @@
       padding: 5rem 0;
     }
 
+    &--less-padding {
+      padding: 2rem 0;
+
+      @mixin small {
+        padding: 3rem 0;
+      }
+
+      @mixin medium {
+        padding: 4rem 0;
+      }
+    }
+
     &--gray {
       background-color: #F5F5F5;
+    }
+
+    &--dark {
+      background-color: #212121;
     }
 }
