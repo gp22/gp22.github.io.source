@@ -1,6 +1,8 @@
 .contact-point {
-  padding: 2rem 0;
-  background-color: #313131;
+  padding: 1.6rem 0.4rem;
+  margin-bottom: 1.4rem;
+  background-color: #292929;
+  width: 100%;
 
   &__circle {
     display: block;
@@ -9,6 +11,11 @@
     margin: 0 auto;
     border-radius: 50%;
     background-color: $darkOrange;
+  }
+
+  &__link {
+    text-align: center;
+    margin-top: 1em;
   }
 
   &__icon {
@@ -27,8 +34,9 @@
     }
 
     &--email {
-      top: 6px;
-      left: 14px;
+      font-size: 2.5rem;
+      top: 13px;
+      left: 18px;
     }
   }
 }

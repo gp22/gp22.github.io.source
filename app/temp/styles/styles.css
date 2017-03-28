@@ -483,7 +483,7 @@ h1, h2, h3 {
 
 a:link,
 a:visited {
-    /*color: $defaultOrange;*/
+    color: #fff;
     text-decoration: none;
     /*padding-bottom:*/
 }
@@ -664,6 +664,18 @@ a:active {
   overflow: hidden;
 }
 
+.wrapper--no-padding-until-small {
+  padding: 0;
+}
+
+@media (min-width: 530px) {
+
+  .wrapper--no-padding-until-small {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
 .page-section {
     padding: 3rem 0;
 }
@@ -684,20 +696,6 @@ a:active {
 
 .page-section--less-padding {
   padding: 2rem 0;
-}
-
-@media (min-width: 530px) {
-
-  .page-section--less-padding {
-    padding: 3rem 0;
-  }
-}
-
-@media (min-width: 800px) {
-
-  .page-section--less-padding {
-    padding: 4rem 0;
-  }
 }
 
 .page-section--gray {
@@ -819,9 +817,13 @@ a:active {
   }
 }
 
+.copy-container--centered {
+  text-align: center;
+}
+
 @media (min-width: 800px) {
 
-  .copy-container--centered {
+  .copy-container--centered-at-medium {
     text-align: center;
   }
 }
@@ -893,9 +895,9 @@ a:active {
   }
 }
 
-@media (min-width: 530px) {
+@media (min-width: 800px) {
 
-  .row__small-4 {
+  .row__medium-4 {
     float: left;
     width: 33.33%;
   }
@@ -919,16 +921,16 @@ a:active {
 
 /* Begin equal height rules */
 
-@media (min-width: 530px) {
+@media (min-width: 800px) {
 
-  .row--equal-height-at-small {
+  .row--equal-height-at-medium {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-.row--equal-height-at-small > div {
+.row--equal-height-at-medium > div {
   float: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -977,7 +979,7 @@ a:active {
 
 .headline {
   font-family: 'Fjalla One', sans-serif;
-  margin: 0;
+  margin: 1.6rem 0;
   font-size: 2rem;
 }
 
@@ -1119,8 +1121,10 @@ a:active {
 }
 
 .contact-point {
-  padding: 2rem 0;
-  background-color: #313131;
+  padding: 1.6rem 0.4rem;
+  margin-bottom: 1.4rem;
+  background-color: #292929;
+  width: 100%;
 }
 
 .contact-point__circle {
@@ -1130,6 +1134,11 @@ a:active {
   margin: 0 auto;
   border-radius: 50%;
   background-color: #F57C00;
+}
+
+.contact-point__link {
+  text-align: center;
+  margin-top: 1em;
 }
 
 .contact-point__icon {
@@ -1149,6 +1158,7 @@ a:active {
 }
 
 .contact-point__icon--email {
-  top: 6px;
-  left: 14px;
+  font-size: 2.5rem;
+  top: 13px;
+  left: 18px;
 }

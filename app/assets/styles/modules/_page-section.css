@@ -11,14 +11,6 @@
 
     &--less-padding {
       padding: 2rem 0;
-
-      @mixin small {
-        padding: 3rem 0;
-      }
-
-      @mixin medium {
-        padding: 4rem 0;
-      }
     }
 
     &--gray {

@@ -46,8 +46,8 @@
     }
   }
 
-  @mixin small {
-    &__small-4 {
+  @mixin medium {
+    &__medium-4 {
       float: left;
       width: 33.33%;
     }
@@ -69,8 +69,8 @@
 
   /* Begin equal height rules */
 
-  &--equal-height-at-small {
-    @mixin small {
+  &--equal-height-at-medium {
+    @mixin medium {
       display: flex;
     }
 

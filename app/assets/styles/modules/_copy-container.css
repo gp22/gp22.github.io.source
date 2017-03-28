@@ -52,8 +52,11 @@
   }
 
   &--centered {
-    @mixin medium {
-      text-align: center;
+    text-align: center;
+    &-at-medium {
+      @mixin medium {
+        text-align: center;
+      }
     }
   }
 

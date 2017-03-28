@@ -3,4 +3,13 @@
   max-width: 936px;
   margin: 0 auto;
   overflow: hidden;
+
+  &--no-padding-until-small {
+    padding: 0;
+
+    @mixin small {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
 }

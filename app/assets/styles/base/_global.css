@@ -21,7 +21,7 @@ h1, h2, h3 {
 
 a:link,
 a:visited {
-    /*color: $defaultOrange;*/
+    color: #fff;
     text-decoration: none;
     /*padding-bottom:*/
 }
