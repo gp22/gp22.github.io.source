@@ -739,10 +739,20 @@ a:active {
 }
 
 .shadow {
-    box-shadow: 0 10px 20px #D3D3D3;
+  box-shadow: 0 10px 20px #d3d3d3;
 }
 
-/*box-shadow: 2px 4px 15px #D3D3D3;*/
+.shadow--dark {
+  box-shadow: 0 10px 20px #212121;
+}
+
+.shadow--black {
+  box-shadow: 0 10px 20px #000;
+}
+
+.shadow--upper {
+  box-shadow: 0 -8px 20px #d3d3d3;
+}
 
 .copy-container {
   letter-spacing: 1px;
@@ -1124,7 +1134,7 @@ a:active {
 .contact-point {
   padding: 1.6rem 0.4rem;
   margin-bottom: 1.4rem;
-  background-color: #292929;
+  background-color: #313131;
   width: 100%;
 }
 
@@ -1134,17 +1144,7 @@ a:active {
   width: 75px;
   margin: 0 auto;
   border-radius: 50%;
-  background-color: #F57C00;/*& > a:link,
-    & > a:visited {
-        color: #fff;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-
-    & > a:hover,
-    & > a:active {
-      color: $defaultOrange;
-    }*/
+  background-color: #F57C00;
 }
 
 .contact-point__link {
