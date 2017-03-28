@@ -23,10 +23,10 @@ a:link,
 a:visited {
     color: #fff;
     text-decoration: none;
-    /*padding-bottom:*/
+    transition: color 0.3s;
 }
 
 a:hover,
 a:active {
-
+  color: $defaultOrange;
 }
