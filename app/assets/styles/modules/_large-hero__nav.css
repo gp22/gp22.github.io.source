@@ -1,38 +1,47 @@
 .large-hero__nav {
-    text-align: center;
-    text-shadow: 0 0 5px #ccc;
-    
-    &-ul {
-        padding: 0;
-        margin-top: 0;
-    }
+  position: absolute;
+  max-width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  text-shadow: 0 0 5px #ccc;
 
-    &-li {
-        display: inline-block;
-        padding-top: 20px;
-        margin: 0 0.5em;
+  &-ul {
+      padding: 0;
+      margin-top: 0;
+      @mixin clearfix;
+  }
 
-        @mixin small {
-            font-size: 1.1rem;
-            margin: 0 2em;
-        }
+  &-li {
+      display: inline-block;
+      padding: 20px 1em 0 1em;
+      /*margin: 0 0.5em;*/
 
-        @mixin medium {
-            font-size: 1.3em;
-            margin: 0 3.5em;
-        }
-    }
+      @mixin small {
+          /*font-size: 1.1rem;*/
+          /*margin: 0 2em;*/
+      }
 
-    &-li-a:link,
-    &-li-a:visited {
-        color: #fff;
-        text-transform: uppercase;
-        transition: border-bottom 0.2s;
-    }
+      @mixin medium {
+          font-size: 1.2em;
+          /*margin: 0 3.5em;*/
+      }
+  }
 
-    &-li-a:hover,
-    &-li-a:active {
-        border-bottom: 2px solid $defaultOrange;
-    }
+  &-li:last-child {
+    padding-right: 0;
+  }
+
+  &-li-a:link,
+  &-li-a:visited {
+      color: #fff;
+      text-transform: uppercase;
+      transition: border-bottom 0.2s;
+  }
+
+  &-li-a:hover,
+  &-li-a:active {
+      border-bottom: 2px solid $defaultOrange;
+  }
 
 }
