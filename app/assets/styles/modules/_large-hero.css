@@ -1,80 +1,87 @@
 .large-hero {
-    color: #fff;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/app/assets/img/background.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/app/assets/img/background.jpg');
+  background-size: cover;
+  background-position: center;
 
-    &__text-content {
-        display: block;
-        max-width: 280px;
-        margin: 0 auto;
+  &__text-content {
+    display: block;
+    max-width: 280px;
+    margin: 0 auto;
 
-        @mixin small {
-            max-width: 500px;
-        }
-
-        @mixin medium {
-            max-width: 550px;
-        }
-
-        @mixin large {
-            max-width: 700px;
-        }
+    @mixin small {
+      max-width: 500px;
     }
 
-    &__title {
-        font-size: 3rem;
-        font-family: 'Fjalla One', sans-serif;
-        text-shadow: 0 0 0.25rem #ccc;
-
-        @mixin small {
-            font-size: 3.4rem;
-        }
-
-        @mixin medium {
-            font-size: 4rem;
-        }
-
-        @mixin large {
-            font-size: 4.6rem;
-        }
+    @mixin medium {
+      max-width: 550px;
     }
 
-    &__name {
-        font-size: 5.4rem;
-        color: $defaultOrange;
-        text-shadow: 0 0 0.25rem $darkOrange;
-        line-height: 120%;
+    @mixin large {
+      max-width: 700px;
+    }
+  }
 
-        @mixin small {
-            font-size: 6rem;
-        }
+  &__title {
+    font-size: 3rem;
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 0 0 0.25rem rgba(255, 255, 255, 0.7);
+    margin-bottom: 1rem;
+    margin-top: 9rem;
 
-        @mixin medium {
-            font-size: 7rem;
-        }
-
-        @mixin large {
-            font-size: 9rem;
-        }
+    @mixin small {
+      font-size: 3.4rem;
+      margin-top: 11rem;
     }
 
-    &__subtitle {
-        margin: 0;
-        font-size: 1.8rem;
-        text-shadow: 0 0 0.25rem #ccc;
-
-        @mixin small {
-            font-size: 2.1rem;
-        }
-
-        @mixin medium {
-            font-size: 2.4rem;
-        }
-
-        @mixin large {
-            font-size: 2.6rem;
-        }
+    @mixin medium {
+      font-size: 4rem;
+      /*margin-top: 10rem;*/
     }
+
+    @mixin large {
+      font-size: 4.6rem;
+      /*margin-top: 11rem;*/
+    }
+  }
+
+  &__name {
+    font-size: 5.4rem;
+    color: $defaultOrange;
+    text-shadow: 0 0 0.25rem rgba(255, 152, 0, 0.7);
+    line-height: 120%;
+
+    @mixin small {
+      font-size: 6rem;
+    }
+
+    @mixin medium {
+      font-size: 7rem;
+    }
+
+    @mixin large {
+      font-size: 9rem;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 9rem;
+    font-size: 1.8rem;
+    text-shadow: 0 0 0.25rem rgba(255, 255, 255, 0.7);
+
+    @mixin small {
+      font-size: 2.1rem;
+      margin-bottom: 11rem;
+    }
+
+    @mixin medium {
+      font-size: 2.4rem;
+      /*margin-bottom: 11rem;*/
+    }
+
+    @mixin large {
+      font-size: 2.6rem;
+      /*margin-bottom: 11rem;*/
+    }
+}
 }
