@@ -1,8 +1,9 @@
 .project {
-  padding-top: 1em;
+  padding: 1em 0;
 
   @mixin medium {
     padding-top: 2em;
+    padding-bottom: 2em;
   }
 
   &__title {
@@ -27,12 +28,9 @@
     }
   }
 
-  &__list {
     ul {
       position: relative;
       border-left: 2px solid $defaultOrange;
-      text-align: justify;
-      list-style-image: url('/assets/img/icons/bullet.png');
       padding-left: 18px;
 
       @mixin medium {
@@ -41,13 +39,11 @@
     }
 
     ul li {
-      display: inline-block;
+      display: block;
       padding-bottom: 0.75rem;
       border-bottom: 1px solid $divider;
       margin-bottom: 1rem;
     }
-
-  }
 
   &__img {
     display: block;

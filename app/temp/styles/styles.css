@@ -659,8 +659,8 @@ a:active {
 }
 
 .wrapper {
-  padding: 0 18px;
-  max-width: 936px;
+  padding: 0 30px;
+  max-width: 960px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -672,8 +672,8 @@ a:active {
 @media (min-width: 530px) {
 
   .wrapper--no-padding-until-small {
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -757,6 +757,7 @@ a:active {
 .copy-container {
   letter-spacing: 1px;
   line-height: 1.65;
+  text-align: justify;
 }
 
 .copy-container p {
@@ -774,7 +775,6 @@ a:active {
 
   .copy-container {
     font-size: 1.4rem;
-    text-align: justify;
   }
 
   .copy-container p {
@@ -1024,13 +1024,14 @@ a:active {
 }
 
 .project {
-  padding-top: 1em;
+  padding: 1em 0;
 }
 
 @media (min-width: 800px) {
 
   .project {
     padding-top: 2em;
+    padding-bottom: 2em;
   }
 }
 
@@ -1065,23 +1066,21 @@ a:active {
   }
 }
 
-.project__list ul {
+.project ul {
   position: relative;
   border-left: 2px solid #FF9800;
-  text-align: justify;
-  list-style-image: url('/assets/img/icons/bullet.png');
   padding-left: 18px;
 }
 
 @media (min-width: 800px) {
 
-  .project__list ul {
+  .project ul {
     padding-left: 40px;
   }
 }
 
-.project__list ul li {
-  display: inline-block;
+.project ul li {
+  display: block;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid #BDBDBD;
   margin-bottom: 1rem;

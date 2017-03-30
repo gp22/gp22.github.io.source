@@ -1,6 +1,6 @@
 .wrapper {
-  padding: 0 18px;
-  max-width: 936px;
+  padding: 0 30px;
+  max-width: 960px;
   margin: 0 auto;
   overflow: hidden;
 
@@ -8,8 +8,8 @@
     padding: 0;
 
     @mixin small {
-      padding-left: 18px;
-      padding-right: 18px;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 }
