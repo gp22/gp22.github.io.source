@@ -19,10 +19,6 @@
     }
   }
 
-  @mixin large {
-    /*font-size: 1.6rem;*/
-  }
-
   &--long {
     @mixin medium {
       max-width: 760px;
@@ -44,10 +40,6 @@
 
     @mixin medium {
       font-size: 1.6rem;
-    }
-
-    @mixin large {
-      /*font-size: 1.8rem;*/
     }
   }
 
