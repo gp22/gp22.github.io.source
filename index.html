@@ -13,9 +13,9 @@
 <body>
   <nav class="large-hero__nav">
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about" id="about-link">About</a></li>
+      <li><a href="#projects" id="projects-link">Projects</a></li>
+      <li><a href="#contact" id="contact-link">Contact</a></li>
     </ul>
   </nav>
   <header class="large-hero shadow--header">
@@ -35,9 +35,9 @@
     </div>
   </header>
 
-  <section class="page-section">
+  <section class="page-section" id="about" data-matching-link="#about-link">
     <div class="wrapper">
-      <h2 class="section-title" id="about">About</h2>
+      <h2 class="section-title">About</h2>
       <img class="img img--small img--round img--centered shadow img--b-margin-large" src="app/assets/img/portrait.jpg" alt="portrait of Paul">
       <div class="copy-container copy-container--long copy-container--large copy-container--centered-at-medium">
         <p>I'm a full-stack web developer &mdash; Currently working with the MEAN stack <em>(MongoDB, Express.js, Angular.js, Node.js)</em>.</p>
@@ -59,9 +59,9 @@
     </div>
   </section>
 
-  <section class="page-section page-section--gray shadow--upper-light">
+  <section class="page-section page-section--gray shadow--upper-light" id="projects" data-matching-link="#projects-link">
     <div class="wrapper">
-    <h2 class="section-title" id="projects">Projects</h2>
+    <h2 class="section-title">Projects</h2>
       <div class="project">
         <div class="row row--gutters-wide">
           <div class="row__medium-6">
@@ -83,9 +83,9 @@
     </div>
   </section>
 
-  <footer class="page-section page-section--less-padding page-section--dark shadow--upper copy-container--white">
+  <footer class="page-section page-section--less-padding page-section--dark shadow--upper copy-container--white" id="contact" data-matching-link="#contact-link">
     <div class="wrapper wrapper--no-padding-until-small">
-      <h2 class="headline headline--centered" id="contact">Let&rsquo;s Chat!</h2>
+      <h2 class="headline headline--centered">Let&rsquo;s Chat!</h2>
       <div class="row row--gutters-narrow row--equal-height-at-medium">
         <div class="row__medium-4">
           <div class="contact-point shadow">
@@ -120,5 +120,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="app/temp/scripts/app.js"></script>
+
 </body>
 </html>
