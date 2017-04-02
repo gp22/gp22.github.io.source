@@ -9,7 +9,7 @@
   &__title {
     font-family: 'Fjalla One', sans-serif;
     font-size: 2rem;
-    margin-top: 1.4em;
+    margin-top: 3rem;
 
     @mixin small {
       font-size: 2.4rem;
@@ -18,32 +18,7 @@
     @mixin medium {
       font-size: 3rem;
     }
-
-    &--centered-until-medium {
-      text-align: center;
-
-      @mixin medium {
-        text-align: left;
-      }
-    }
   }
-
-    ul {
-      position: relative;
-      border-left: 2px solid $defaultOrange;
-      padding-left: 18px;
-
-      @mixin medium {
-        padding-left: 40px;
-      }
-    }
-
-    ul li {
-      display: block;
-      padding-bottom: 0.75rem;
-      border-bottom: 1px solid $divider;
-      margin-bottom: 1rem;
-    }
 
   &__img {
     display: block;
