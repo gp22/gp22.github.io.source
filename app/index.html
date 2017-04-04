@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,300i" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- build:css assets/styles/styles.css -->
+  <link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+  <!-- endbuild -->
+  <!-- build:js assets/scripts/vendor.js -->
+  <script src="temp/scripts/vendor.js"></script>
+  <!-- endbuild -->
+  <title>Paul Garcia - Full-Stack Web Developer</title>
+</head>
+
+<body>
+  <nav class="large-hero__nav">
+    <ul>
+      <li><a href="#about" id="about-link">About</a></li>
+      <li><a href="#projects" id="projects-link">Projects</a></li>
+      <li><a href="#contact" id="contact-link">Contact</a></li>
+    </ul>
+  </nav>
+  <header class="large-hero shadow--header">
+    <div class="wrapper">
+      <div class="row">
+        <div>
+          <div class="large-hero__text-content">
+            <h1 class="large-hero__title">
+              My name is <br><span class="large-hero__name">Paul Garcia</span>
+            </h1>
+            <h2 class="large-hero__subtitle">
+              I build web applications
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-section" id="about" data-matching-link="#about-link">
+    <div class="wrapper">
+      <h2 class="section-title">About</h2>
+      <img class="img img--small img--round img--centered shadow img--b-margin-large lazyload" data-src="assets/img/portrait.jpg" alt="portrait of Paul">
+      <div class="copy-container copy-container--long copy-container--large copy-container--centered-at-medium">
+        <p>I'm a full-stack web developer &mdash; Currently working with the MEAN stack <em>(MongoDB, Express.js, Angular.js, Node.js)</em>.</p>
+      </div>
+      <div class="row row--gutters">
+        <div class="row__medium-6">
+          <div class="copy-container">
+            <p>I'm passionate about technology and it's impact on society. I believe in privacy, freedom, and pushing the boundaries of what's considered normal and acceptable.</p>
+            <p>We live in wild times. And I think using software as a way of contributing to that is really cool! I love learning new frameworks and software development techniques.</p>
+          </div>
+        </div>
+        <div class="row__medium-6">
+          <div class="copy-container">
+            <p>I also dig Linux, BSD, Internet protocols <em>(TCP/IP, HTTP, etc.)</em> and server and network administration. I spend my free time working on API and RESTful web application projects.</p>
+            <p>I'm always learning... <em>Sometimes I break stuff in the process!</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section page-section--gray shadow--upper-light" id="projects" data-matching-link="#projects-link">
+    <div class="wrapper">
+    <h2 class="section-title">Projects</h2>
+
+      <div class="project">
+        <div class="row row--gutters-wide">
+          <div class="row__medium-6">
+            <img data-src="assets/img/votingApp-iPhone.png" alt="Voting App iPhone" class="project__img project__img--iphone project__img--centered-until-medium lazyload">
+          </div>
+          <div class="row__medium-6 row__narrow copy-container--centered-until-medium">
+            <h3 class="project__title">Voting App</h3>
+            <div class="copy-container copy-container--more-b-margin">
+              <ul>
+                <li>Full-stack web app using JWT authentication.</li>
+                <li>Allows account creation.</li>
+                <li>Allows users to create, share and modify polls.</li>
+                <li>Displays poll results in chart form.</li>
+              </ul>
+            </div>
+            <a href="https://gp22-voting.herokuapp.com/" class="btn">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="row row--gutters-wide">
+          <div class="row__medium-6">
+            <img data-src="assets/img/travelSite-iPhone.png" alt="Voting App iPhone" class="project__img project__img--iphone project__img--centered-until-medium lazyload">
+          </div>
+          <div class="row__medium-6 row__narrow copy-container--centered-until-medium">
+            <h3 class="project__title">Travel Site</h3>
+            <div class="copy-container copy-container--more-b-margin">
+              <ul>
+                <li>Fake travel company website.</li>
+                <li>Created for a course on automated developer workflow.</li>
+                <li>Uses Gulp, Webpack, and PostCSS.</li>
+                <li>Modular, reusable code.</li>
+              </ul>
+            </div>
+            <a href="https://gp22.github.io/travel-site/" class="btn">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="row row--gutters-wide">
+          <div class="row__medium-6">
+            <img data-src="assets/img/api-iPhone.png" alt="Voting App iPhone" class="project__img project__img--iphone project__img--centered-until-medium lazyload">
+          </div>
+          <div class="row__medium-6 row__narrow copy-container--centered-until-medium">
+            <h3 class="project__title">API's</h3>
+            <div class="copy-container copy-container--more-b-margin">
+              <ul>
+                <li>I’ve created several API projects to get experience writing server and database code.</li>
+                <li>These API's use Node.js, Express.js and MongoDB.</li>
+                <li>Click the button to view my URL shortener.</li>
+              </ul>
+            </div>
+            <a href="https://gp22-shorturl.herokuapp.com/" class="btn">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="page-section page-section--less-padding page-section--dark shadow--upper copy-container--white" id="contact" data-matching-link="#contact-link">
+    <div class="wrapper wrapper--no-padding-until-small">
+      <h2 class="headline headline--centered">Let&rsquo;s Chat!</h2>
+      <div class="row row--gutters-narrow row--equal-height-at-medium">
+        <div class="row__medium-4">
+          <div class="contact-point shadow">
+            <a class="contact-point__circle shadow" href="https://github.com/gp22">
+              <i class="fa fa-github contact-point__icon contact-point__icon--github" aria-hidden="true"></i>
+            </a>
+            <div class="contact-point__link">
+              <a href="https://github.com/gp22">github.com/gp22</a>
+            </div>
+          </div>
+        </div>
+        <div class="row__medium-4">
+          <div class="contact-point shadow">
+            <a class="contact-point__circle shadow" href="https://www.linkedin.com/in/paulgarcia22">
+              <i class="fa fa-linkedin contact-point__icon contact-point__icon--linkedin" aria-hidden="true"></i>
+            </a>
+            <div class="contact-point__link">
+              <a href="https://www.linkedin.com/in/paulgarcia22">linkedin.com/paulgarcia22</a>
+            </div>
+          </div>
+        </div>
+        <div class="row__medium-4">
+          <div class="contact-point shadow">
+            <a class="contact-point__circle shadow" href="mailto:gp22@tutanota.com">
+              <i class="fa fa-envelope contact-point__icon contact-point__icon--email" aria-hidden="true"></i>
+            </a>
+            <div class="contact-point__link">
+              <a href="mailto:gp22@tutanota.com">gp22@tutanota.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- build:js assets/scripts/app.js -->
+  <script src="temp/scripts/app.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

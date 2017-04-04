@@ -9,11 +9,11 @@ gulp.task('watch', function() {
   browserSync.init({
     notify: false,
     server: {
-      baseDir: './'
+      baseDir: 'app'
     }
   });
 
-  watch('./index.html', function() {
+  watch('./app/index.html', function() {
     browserSync.reload();
   });
 
