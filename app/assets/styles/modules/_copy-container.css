@@ -7,6 +7,23 @@
     margin-bottom: 2rem;
   }
 
+  ul {
+    position: relative;
+    border-left: 2px solid $defaultOrange;
+    padding-left: 18px;
+
+    @mixin medium {
+      padding-left: 40px;
+    }
+  }
+
+  ul li {
+    display: block;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid $divider;
+    margin-bottom: 1rem;
+  }
+
   @mixin small {
     font-size: 1.2rem;
   }
@@ -17,10 +34,6 @@
     p {
       margin-bottom: 2.6rem;
     }
-  }
-
-  @mixin large {
-    /*font-size: 1.6rem;*/
   }
 
   &--long {
@@ -45,10 +58,6 @@
     @mixin medium {
       font-size: 1.6rem;
     }
-
-    @mixin large {
-      /*font-size: 1.8rem;*/
-    }
   }
 
   &--centered {
@@ -60,7 +69,23 @@
     }
   }
 
+  &--centered-until-medium {
+    text-align: center;
+
+    @mixin medium {
+      text-align: left;
+    }
+  }
+
   &--white {
     color: #fff;
+  }
+
+  &--more-b-margin {
+    margin-bottom: 2.6rem;
+
+    @mixin medium {
+      margin-bottom: 3.4rem;
+    }
   }
 }

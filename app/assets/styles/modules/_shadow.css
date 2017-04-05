@@ -1,15 +1,15 @@
 .shadow {
-  box-shadow: 0 10px 20px #d3d3d3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
 
-  &--dark {
-    box-shadow: 0 10px 20px #212121;
-  }
-
-  &--black {
-    box-shadow: 0 10px 20px #000;
+  &--header {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.23);
   }
 
   &--upper {
-    box-shadow: 0 -8px 20px #d3d3d3;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  &--upper-light {
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.03);
   }
 }

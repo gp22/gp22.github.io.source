@@ -6,23 +6,36 @@ browserSync = require('browser-sync').create();
 
 gulp.task('watch', function() {
 
-    browserSync.init({
-        notify: false,
-        server: {
-            baseDir: './'
-        }
-    });
+  browserSync.init({
+    notify: false,
+    server: {
+      baseDir: 'app'
+    }
+  });
 
-    watch('./index.html', function() {
-        browserSync.reload();
-    });
+  watch('./app/index.html', function() {
+    browserSync.reload();
+  });
 
-    watch('./app/assets/styles/**/*.css', function() {
-        gulp.start('cssInject');
-    });
+  // watch for changes to any css files
+  watch('./app/assets/styles/**/*.css', function() {
+    gulp.start('cssInject');
+  });
+
+  // watch for changes to any javascript files and call the scriptsRefresh
+  // task to refresh the browser
+  watch('./app/assets/scripts/**/*.js', function() {
+    gulp.start('scriptsRefresh');
+  });
 });
 
 gulp.task('cssInject', ['styles'], function() {
-    return gulp.src('./app/temp/styles/styles.css')
-    .pipe(browserSync.stream());
+  return gulp.src('./app/temp/styles/styles.css')
+  .pipe(browserSync.stream());
+});
+
+// refresh the page when any javascript file changes once the main scripts
+// task is completed
+gulp.task('scriptsRefresh', ['scripts'], function() {
+  browserSync.reload();
 });

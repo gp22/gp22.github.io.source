@@ -1,17 +1,6 @@
 .row {
   @mixin clearfix;
 
-  &--vertical-centered-div {
-    display: flex;
-    flex-direction: column;
-
-    & > div {
-      height: 80vh;
-      display: flex;
-      align-items: center;
-    }
-  }
-
   &--gutters {
     margin-right: -60px;
   }

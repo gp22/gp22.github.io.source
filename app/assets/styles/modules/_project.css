@@ -1,15 +1,34 @@
 .project {
-  padding: 1em 0;
+  border-bottom: 1px solid $divider;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+
+  &:first-of-type {
+    padding-top: 1rem;
+
+    @mixin medium {
+      padding-top: 2rem;
+    }
+  }
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 2rem;
+
+    @mixin medium {
+      padding-bottom: 3rem;
+    }
+  }
 
   @mixin medium {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   &__title {
     font-family: 'Fjalla One', sans-serif;
     font-size: 2rem;
-    margin-top: 1.4em;
+    margin-top: 2rem;
 
     @mixin small {
       font-size: 2.4rem;
@@ -18,32 +37,7 @@
     @mixin medium {
       font-size: 3rem;
     }
-
-    &--centered-until-medium {
-      text-align: center;
-
-      @mixin medium {
-        text-align: left;
-      }
-    }
   }
-
-    ul {
-      position: relative;
-      border-left: 2px solid $defaultOrange;
-      padding-left: 18px;
-
-      @mixin medium {
-        padding-left: 40px;
-      }
-    }
-
-    ul li {
-      display: block;
-      padding-bottom: 0.75rem;
-      border-bottom: 1px solid $divider;
-      margin-bottom: 1rem;
-    }
 
   &__img {
     display: block;

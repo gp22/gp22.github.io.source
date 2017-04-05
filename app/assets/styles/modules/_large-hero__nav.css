@@ -1,38 +1,44 @@
 .large-hero__nav {
-    text-align: center;
-    text-shadow: 0 0 5px #ccc;
-    
-    &-ul {
-        padding: 0;
-        margin-top: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  text-shadow: 0 0 0.25rem rgba(255, 255, 255, 0.7);
+
+  & ul {
+    padding: 0;
+    margin-top: 0;
+    @mixin clearfix;
+  }
+
+  & li {
+    display: inline-block;
+    padding: 1.25rem 0.75rem 0 0.75rem;
+
+    @mixin small {
+      font-size: 1.1rem;
+      padding-left: 2.4rem;
+      padding-right: 2.4rem;
     }
 
-    &-li {
-        display: inline-block;
-        padding-top: 20px;
-        margin: 0 0.5em;
-
-        @mixin small {
-            font-size: 1.1rem;
-            margin: 0 2em;
-        }
-
-        @mixin medium {
-            font-size: 1.3em;
-            margin: 0 3.5em;
-        }
+    @mixin medium {
+      font-size: 1.2em;
+      padding-left: 3.4rem;
+      padding-right: 3.4rem;
     }
+  }
 
-    &-li-a:link,
-    &-li-a:visited {
-        color: #fff;
-        text-transform: uppercase;
-        transition: border-bottom 0.2s;
-    }
+  & li a:link,
+  & li a:visited {
+    color: #fff;
+    text-transform: uppercase;
+    transition: border-bottom 0.2s;
+  }
 
-    &-li-a:hover,
-    &-li-a:active {
-        border-bottom: 2px solid $defaultOrange;
-    }
-
+  & li a:hover,
+  & li a:active {
+    border-bottom: 2px solid $defaultOrange;
+  }
 }

@@ -1,0 +1,24 @@
+.btn {
+    background-color: $defaultOrange;
+    color: #fff;
+    text-decoration: none;
+    padding: .9rem 2.6rem;
+    display: inline-block;
+    border-radius: 6px;
+    transition: all 0.2s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
+
+    @mixin small {
+      font-size: 1.2rem;
+    }
+
+    @mixin medium {
+      font-size: 1.4rem;
+    }
+
+    &:hover {
+      transform: translateY(3%);
+      color: #fff;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 3px 5px rgba(0, 0, 0, 0.16);
+    }
+}

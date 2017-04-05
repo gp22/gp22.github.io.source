@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,300i" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="app/temp/styles/styles.css">
-
+  <link rel="stylesheet" href="assets/styles/styles.css"/>
+  <script src="assets/scripts/vendor.js"></script>
   <title>Paul Garcia - Full-Stack Web Developer</title>
 </head>
 
 <body>
-  <header class="large-hero shadow">
-    <nav class="large-hero__nav">
-      <ul class="large-hero__nav-ul">
-        <li class="large-hero__nav-li"><a class="large-hero__nav-li-a" href="#">About</a></li>
-        <li class="large-hero__nav-li"><a class="large-hero__nav-li-a" href="#">Projects</a></li>
-        <li class="large-hero__nav-li"><a class="large-hero__nav-li-a" href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <nav class="large-hero__nav">
+    <ul>
+      <li><a href="#about" id="about-link">About</a></li>
+      <li><a href="#projects" id="projects-link">Projects</a></li>
+      <li><a href="#contact" id="contact-link">Contact</a></li>
+    </ul>
+  </nav>
+  <header class="large-hero shadow--header">
     <div class="wrapper">
-      <div class="row row--vertical-centered-div">
+      <div class="row">
         <div>
           <div class="large-hero__text-content">
             <h1 class="large-hero__title">
@@ -35,10 +35,10 @@
     </div>
   </header>
 
-  <section class="page-section">
+  <section class="page-section" id="about" data-matching-link="#about-link">
     <div class="wrapper">
       <h2 class="section-title">About</h2>
-      <img class="img img--small img--round img--centered shadow img--b-margin-large" src="app/assets/img/portrait.jpg" alt="portrait of Paul">
+      <img class="img img--small img--round img--centered shadow img--b-margin-large lazyload" data-src="assets/img/portrait.jpg" alt="portrait of Paul">
       <div class="copy-container copy-container--long copy-container--large copy-container--centered-at-medium">
         <p>I'm a full-stack web developer &mdash; Currently working with the MEAN stack <em>(MongoDB, Express.js, Angular.js, Node.js)</em>.</p>
       </div>
@@ -63,17 +63,18 @@
     </div>
   </section>
 
-  <section class="page-section page-section--gray shadow">
+  <section class="page-section page-section--gray shadow--upper-light" id="projects" data-matching-link="#projects-link">
     <div class="wrapper">
     <h2 class="section-title">Projects</h2>
+
       <div class="project">
         <div class="row row--gutters-wide">
           <div class="row__medium-6">
-            <img src="app/assets/img/votingApp-iPhone.png" alt="Voting App iPhone" class="project__img project__img--iphone project__img--centered-until-medium">
+            <img data-src="assets/img/votingApp-iPhone.png" alt="Voting App iPhone" class="project__img project__img--iphone project__img--centered-until-medium lazyload">
           </div>
-          <div class="row__medium-6 row__narrow">
-            <h3 class="project__title project__title--centered-until-medium">Voting App</h3>
-            <div class="copy-container">
+          <div class="row__medium-6 row__narrow copy-container--centered-until-medium">
+            <h3 class="project__title">Voting App</h3>
+            <div class="copy-container copy-container--more-b-margin">
               <ul>
                 <li>Full-stack web app using JWT authentication.</li>
                 <li>Allows account creation.</li>
@@ -81,19 +82,60 @@
                 <li>Displays poll results in chart form.</li>
               </ul>
             </div>
+            <a href="https://gp22-voting.herokuapp.com/" class="btn">View Project</a>
           </div>
         </div>
       </div>
+
+      <div class="project">
+        <div class="row row--gutters-wide">
+          <div class="row__medium-6">
+            <img data-src="assets/img/travelSite-iPhone.png" alt="Voting App iPhone" class="project__img project__img--iphone project__img--centered-until-medium lazyload">
+          </div>
+          <div class="row__medium-6 row__narrow copy-container--centered-until-medium">
+            <h3 class="project__title">Travel Site</h3>
+            <div class="copy-container copy-container--more-b-margin">
+              <ul>
+                <li>Fake travel company website.</li>
+                <li>Created for a course on automated developer workflow.</li>
+                <li>Uses Gulp, Webpack, and PostCSS.</li>
+                <li>Modular, reusable code.</li>
+              </ul>
+            </div>
+            <a href="https://gp22.github.io/travel-site/" class="btn">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="row row--gutters-wide">
+          <div class="row__medium-6">
+            <img data-src="assets/img/api-iPhone.png" alt="Voting App iPhone" class="project__img project__img--iphone project__img--centered-until-medium lazyload">
+          </div>
+          <div class="row__medium-6 row__narrow copy-container--centered-until-medium">
+            <h3 class="project__title">API's</h3>
+            <div class="copy-container copy-container--more-b-margin">
+              <ul>
+                <li>I’ve created several API projects to get experience writing server and database code.</li>
+                <li>These API's use Node.js, Express.js and MongoDB.</li>
+                <li>Click the button to view my URL shortener.</li>
+              </ul>
+            </div>
+            <a href="https://gp22-shorturl.herokuapp.com/" class="btn">View Project</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <footer class="page-section page-section--less-padding page-section--dark shadow--upper copy-container--white">
+  <footer class="page-section page-section--less-padding page-section--dark shadow--upper copy-container--white" id="contact" data-matching-link="#contact-link">
     <div class="wrapper wrapper--no-padding-until-small">
       <h2 class="headline headline--centered">Let&rsquo;s Chat!</h2>
       <div class="row row--gutters-narrow row--equal-height-at-medium">
         <div class="row__medium-4">
-          <div class="contact-point shadow--black">
-            <a class="contact-point__circle shadow--dark" href="https://github.com/gp22">
+          <div class="contact-point shadow">
+            <a class="contact-point__circle shadow" href="https://github.com/gp22">
               <i class="fa fa-github contact-point__icon contact-point__icon--github" aria-hidden="true"></i>
             </a>
             <div class="contact-point__link">
@@ -102,8 +144,8 @@
           </div>
         </div>
         <div class="row__medium-4">
-          <div class="contact-point shadow--black">
-            <a class="contact-point__circle shadow--dark" href="https://www.linkedin.com/in/paulgarcia22">
+          <div class="contact-point shadow">
+            <a class="contact-point__circle shadow" href="https://www.linkedin.com/in/paulgarcia22">
               <i class="fa fa-linkedin contact-point__icon contact-point__icon--linkedin" aria-hidden="true"></i>
             </a>
             <div class="contact-point__link">
@@ -112,8 +154,8 @@
           </div>
         </div>
         <div class="row__medium-4">
-          <div class="contact-point shadow--black">
-            <a class="contact-point__circle shadow--dark" href="mailto:gp22@tutanota.com">
+          <div class="contact-point shadow">
+            <a class="contact-point__circle shadow" href="mailto:gp22@tutanota.com">
               <i class="fa fa-envelope contact-point__icon contact-point__icon--email" aria-hidden="true"></i>
             </a>
             <div class="contact-point__link">
@@ -124,20 +166,6 @@
       </div>
     </div>
   </footer>
-
+  <script src="assets/scripts/app.js"></script>
 </body>
-
 </html>
-
-<!--
-
-Footer:
-
-
-If you'd like to learn more about me, feel free to add me on one or all of the following sites.
-
-###SKILLS
-
-Javascript, HTML5, CSS3, Node.js, Express.js, Angular.js, Mongoose.js, Git, MongoDB, Bootstrap, Linux, Vagrant, Heroku
-
- -->
